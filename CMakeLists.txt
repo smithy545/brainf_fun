@@ -3,4 +3,8 @@ project(brainflife)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(brainflife main.cpp src/BrainyInterpreter.cpp src/BrainyInterpreter.h src/ExecutionState.h)
+add_executable(brainflife
+        main.cpp
+        src/BrainyInterpreter.cpp
+        src/BrainyInterpreter.h
+        src/ExecutionState.h)

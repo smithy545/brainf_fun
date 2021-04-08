@@ -39,7 +39,7 @@ void BrainyInterpreter::execute(std::string code, ExecutionState &state) {
                 if(state[state_ptr] == 0) {
                     while(code[exec_ptr] != ']') {
                         if(exec_ptr >= code.size()) {
-                            std::cout << "Couldn't find matching bracket" << std::endl;
+                            std::cout << "No closing bracket found" << std::endl;
                             return;
                         }
                         exec_ptr++;
